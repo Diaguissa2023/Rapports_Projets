@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./css/inscription.css"/>
+	</head>
+	<body>
+      <div id="mon_formulaire_conteneur">
+		<form name="inscription" method="post" action="ajout_client.php">
+            <fieldset class="mon_formulaire_fieldset">
+			 <div class="photohaut"><p> 
+			 <img src="./image/logo.png" /></p></div>
+               <legend class="mon_formulaire_legend">Inscrivez-vous pour réserver votre réunion ! </legend>
+			   <div style="background-image : url('./image/logo2.jpg');" align="center">
+			   <div class="mon_formulaire_label"> 
+					<h2>Nom de la société</h2>
+						<div class="mon_formulaire_label">
+							<input type="text" name="nom_societe" placeholder="Nom de la société" class="mon_formulaire_champ" required /></div><br/>
+					<div class="mon_formulaire_label"><h2>Nom du contact de la société</h2></div>
+						<div class="mon_formulaire_label">
+							<input type="text" name="nom_contact" placeholder="Nom du contact société" class="mon_formulaire_champ" required /></div><br />
+					<div class="mon_formulaire_label"><h2>Mail du contact société</h2></div>
+						<div class="mon_formulaire_label">
+							<input type="mail" name="mail_contact" placeholder="Mail du contact" class="mon_formulaire_champ" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /></div><br />
+					<div class="mon_formulaire_label"><h2>Numéro de téléphone</h2></div>
+						<div class="mon_formulaire_label">
+							<input type="tel" name="numero_societe" placeholder="Numéro de téléphone" class="mon_formulaire_champ" pattern="[0-9]{10}" maxlength="10" required title="exemple : 0629549071" /></div><br />
+					<div class="mon_formulaire_label"><h2>Mot de passe</h2></div>
+						<div class="mon_formulaire_label">
+							<input type="password" name="mdp_client" placeholder="Mot de passe" class="mon_formulaire_champ" required /></div><br />
+				<div class="mon_formulaire_input">
+					<input type="submit" name="submit" value="S'inscrire" class="mon_formulaire_champ" /></div><br />
+					 <input type="submit" name="acceuil" value="Accueil" class="mon_formulaire_champ" /></div><br /><a href="METTRE LE LIEN DE RETOUR VERS LE SITE"></a>
+		   </fieldset>
+         </form>
+      </div>
+		</div>
+		</body>
+	</html>
